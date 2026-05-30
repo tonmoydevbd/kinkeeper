@@ -1,0 +1,153 @@
+[
+  {
+    "id": 1,
+    "name": "Sarah Jenkins",
+    "picture": "https://unsplash.com",
+    "email": "sarah.j@example.com",
+    "days_since_contact": 19,
+    "status": "overdue",
+    "tags": [
+      "college",
+      "hiking",
+      "travel"
+    ],
+    "bio": "Met during freshman year at NYU. Always down for weekend mountain trails or planning our next backpacking trip.",
+    "goal": 14,
+    "next_due_date": "2026-05-25"
+  },
+  {
+    "id": 2,
+    "name": "Marcus Chen",
+    "picture": "https://unsplash.com",
+    "email": "marcus.chen@example.com",
+    "days_since_contact": 6,
+    "status": "almost due",
+    "tags": [
+      "childhood",
+      "gaming"
+    ],
+    "bio": "Grew up on the same street. We still team up online every couple of weeks for cooperative tactical shooters.",
+    "goal": 7,
+    "next_due_date": "2026-05-31"
+  },
+  {
+    "id": 3,
+    "name": "Elena Rodriguez",
+    "picture": "https://unsplash.com",
+    "email": "elena.rod@example.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": [
+      "coworker",
+      "foodie"
+    ],
+    "bio": "Former marketing lead at my last job. Our mutual love for spicy street food keeps us hunting for new restaurants.",
+    "goal": 30,
+    "next_due_date": "2026-06-26"
+  },
+  {
+    "id": 4,
+    "name": "David Kim",
+    "picture": "https://unsplash.com",
+    "email": "dkim.design@example.com",
+    "days_since_contact": 45,
+    "status": "overdue",
+    "tags": [
+      "mentor",
+      "tech"
+    ],
+    "bio": "Gave me my first break in tech. Grab coffee every few months to talk about career growth, UI trends, and books.",
+    "goal": 30,
+    "next_due_date": "2026-05-15"
+  },
+  {
+    "id": 5,
+    "name": "Chloe Thompson",
+    "picture": "https://unsplash.com",
+    "email": "chloe.t@example.com",
+    "days_since_contact": 12,
+    "status": "on-track",
+    "tags": [
+      "gym",
+      "neighbor"
+    ],
+    "bio": "Lives two doors down. We act as each other's accountability partners for morning weightlifting sessions.",
+    "goal": 14,
+    "next_due_date": "2026-06-01"
+  },
+  {
+    "id": 6,
+    "name": "Arjun Mehta",
+    "picture": "https://unsplash.com",
+    "email": "arjun.m@example.com",
+    "days_since_contact": 28,
+    "status": "almost due",
+    "tags": [
+      "high school",
+      "music"
+    ],
+    "bio": "Played guitar together in a terrible teenage garage band. He still sends me underground indie rock recommendations.",
+    "goal": 30,
+    "next_due_date": "2026-06-01"
+  },
+  {
+    "id": 7,
+    "name": "Jessica Taylor",
+    "picture": "https://unsplash.com",
+    "email": "jess.taylor@example.com",
+    "days_since_contact": 8,
+    "status": "overdue",
+    "tags": [
+      "close friend",
+      "books"
+    ],
+    "bio": "Co-founder of our local monthly sci-fi book club. We end up texting memes about plot holes almost every day.",
+    "goal": 7,
+    "next_due_date": "2026-05-29"
+  },
+  {
+    "id": 8,
+    "name": "Michael Foster",
+    "picture": "https://unsplash.com",
+    "email": "mfoster.builds@example.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": [
+      "hackathon",
+      "creative"
+    ],
+    "bio": "Met at an open-source hackathon event. Currently bouncing SaaS ideas back and forth for a potential side project.",
+    "goal": 14,
+    "next_due_date": "2026-06-08"
+  },
+  {
+    "id": 9,
+    "name": "Amina Diop",
+    "picture": "https://unsplash.com",
+    "email": "amina.diop@example.com",
+    "days_since_contact": 82,
+    "status": "overdue",
+    "tags": [
+      "travel",
+      "long distance"
+    ],
+    "bio": "Met while volunteering in Senegal. Lives across the ocean now, so we catch up via long, rare video calls.",
+    "goal": 60,
+    "next_due_date": "2026-05-08"
+  },
+  {
+    "id": 10,
+    "name": "Ryan Gallagher",
+    "picture": "https://unsplash.com",
+    "email": "ryan.g@example.com",
+    "days_since_contact": 2,
+    "status": "on-track",
+    "tags": [
+      "boardgames",
+      "college"
+    ],
+    "bio": "Part of the weekly Friday night board game group. Hosts complex strategy game sessions at his apartment.",
+    "goal": 7,
+    "next_due_date": "2026-06-04"
+  }
+]
