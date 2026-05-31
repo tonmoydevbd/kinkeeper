@@ -16,7 +16,7 @@ const Statistics = () => {
     { id: 3, stats: 12, title: 'interactions this month' },
   ]
 
-  const element = data.map(item => <div key={item.id} className="p-8 flex flex-col justify-center items-center shadow-lg">
+  const element = data.map(item => <div key={item.id} className="p-8 bg-white flex flex-col justify-center items-center shadow-lg">
     <h3 className="text-3xl font-semibold text-[#244D3F]">{item.stats}</h3>
     <p className="text-lg capitalize">{item.title}</p>
   </div>)

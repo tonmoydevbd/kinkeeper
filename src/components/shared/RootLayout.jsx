@@ -11,7 +11,9 @@ const RootLayout = () => {
     <>
       <Header />
       <TimelineContext value={timelineContextValue}>
-        <Outlet />
+        <div className="bg-[#F8FAFC]">
+          <Outlet />
+        </div>
       </TimelineContext>
       <Footer />
     </>

@@ -7,7 +7,7 @@ import { Link } from "react-router"
 const FriendCard = () => {
   const friendsData = useContext(FriendsContext)
 
-  const friendsDataEl = friendsData.map(friend => <Link key={friend.id} to={`/friend-details/${friend.id}`} > <div className="flex flex-col gap-4 justify-center items-center shadow-md p-4">
+  const friendsDataEl = friendsData.map(friend => <Link key={friend.id} to={`/friend-details/${friend.id}`} > <div className="bg-white flex flex-col gap-4 justify-center items-center shadow-md p-4">
     <img src={friend.picture} width={100} />
     <h3 className="text-xl font-semibold">{friend.name}</h3>
     <p>{friend.days_since_contact}d ago</p>

@@ -19,7 +19,7 @@ const Timeline = () => {
   })
 
 
-  const timelineDataEl = filterTimelineData.map(item => <div key={item.id} className="flex items-center my-6 p-4 border border-gray-100 shadow-md rounded-md">
+  const timelineDataEl = filterTimelineData.map(item => <div key={item.id} className="bg-white flex items-center my-6 p-4 border border-gray-100 shadow-md rounded-md">
     <div className="font-extrabold text-4xl mr-4">
       {item.type === 'text' ? <LuMessageCircleMore /> : item.type === 'video' ? <FaVideo /> : <IoCallSharp />}
     </div>
@@ -30,18 +30,16 @@ const Timeline = () => {
   </div>)
 
   return (
-    <>
-      <div className="max-w-277.5 mx-auto py-20">
-        <h2 className="text-5xl font-bold mb-6">Timeline</h2>
-        <select onChange={handleChange} defaultValue={selectedValue} className="select">
-          <option value='all'>All</option>
-          <option value='text'>Text only</option>
-          <option value='video'>Video only</option>
-          <option value='call'>Call only</option>
-        </select>
-        <div>{timelineDataEl}</div>
-      </div>
-    </>
+    <div className="max-w-277.5 mx-auto py-20">
+      <h2 className="text-5xl font-bold mb-6">Timeline</h2>
+      <select onChange={handleChange} defaultValue={selectedValue} className="select">
+        <option value='all'>All</option>
+        <option value='text'>Text only</option>
+        <option value='video'>Video only</option>
+        <option value='call'>Call only</option>
+      </select>
+      <div>{timelineDataEl}</div>
+    </div>
   )
 }
 
