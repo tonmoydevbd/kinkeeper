@@ -8,7 +8,7 @@ import { Link } from "react-router"
 
 const FriendDetailsBody = ({ friend, formatDate, handleCall, handleText, handleVideo }) => {
   return (
-    <div className="max-w-277.5 mx-auto grid grid-cols-3 py-20 gap-6">
+    <div className="max-w-277.5 mx-auto grid grid-cols-1 md:grid-cols-3 py-5 md:py-20 gap-6">
       <div className="col-span-1">
         <div className="bg-white flex flex-col items-center gap-4 my-4 p-4 shadow-md border border-gray-100">
           <img src={friend.picture} width={100} />
@@ -26,8 +26,8 @@ const FriendDetailsBody = ({ friend, formatDate, handleCall, handleText, handleV
           <button className="bg-white flex justify-center items-center py-4 w-full gap-2 text-xl text-red-600 shadow-md border border-gray-100"><RiDeleteBinLine />Delete</button>
         </div>
       </div>
-      <div className="col-span-2 flex flex-col py-4 gap-6">
-        <div className="grid grid-cols-3  gap-6">
+      <div className="col-span-1 md:col-span-2 flex flex-col py-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3  gap-6">
           <div className="bg-white text-center shadow-md border border-gray-100 py-8">
             <h3 className="text-3xl font-semibold text-[#244d3f]">{friend.days_since_contact}</h3>
             <p className="text-lg capitalize">Days Since Contact</p>

@@ -14,7 +14,7 @@ const Home = () => {
   return (
     <>
       <FriendsContext value={friendsData}>
-        <div className="py-20">
+        <div className="py-5 md:py-20">
           <TitleWithBtn />
           <Statistics />
           <FriendsList />
