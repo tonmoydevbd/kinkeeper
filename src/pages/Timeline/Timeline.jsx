@@ -13,13 +13,13 @@ const Timeline = () => {
     setSelectedValue(event.target.value)
   }
 
-  const filterTimelineData = timelineData.filter(data => {
+  const filterTimelineData = timelineData?.filter(data => {
     if (selectedValue === 'all') return true
     return data.type === selectedValue
   })
 
 
-  const timelineDataEl = filterTimelineData.map(item => <div key={item.id} className="bg-white flex items-center my-6 p-4 border border-gray-100 shadow-md rounded-md">
+  const timelineDataEl = filterTimelineData?.map(item => <div key={item.id} className="bg-white flex items-center my-6 p-4 border border-gray-100 shadow-md rounded-md">
     <div className="font-extrabold text-4xl mr-4">
       {item.type === 'text' ? <LuMessageCircleMore /> : item.type === 'video' ? <FaVideo /> : <IoCallSharp />}
     </div>
@@ -38,7 +38,7 @@ const Timeline = () => {
         <option value='video'>Video only</option>
         <option value='call'>Call only</option>
       </select>
-      <div>{timelineDataEl}</div>
+      <div>{timelineData.length === 0 ? <h2 className='mt-10 text-3xl font-bold text-center'>No Interactions</h2> : timelineDataEl}</div>
     </div>
   )
 }

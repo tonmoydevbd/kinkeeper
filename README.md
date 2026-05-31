@@ -1,16 +1,19 @@
-# React + Vite
+# 📝 KeenKeeper
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+KeenKeeper is a smart personal relationship tracker designed to help you maintain and balance your connections with friends. By logging every call, text, and video chat, the app provides visual insights into your communication habits, ensuring you never lose touch with the people who matter most.
 
-Currently, two official plugins are available:
+## 🚀 Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **React** - Frontend core framework
+* **React Router** - Single-page application navigation
+* **Recharts** - Dynamic data visualization and pie charts
+* **Tailwind CSS** - Utility-first styling
+* **DaisyUI** - Ready-made component layouts
+* **React Icons** - Clean and modern iconography
+* **React-Toastify** - Real-time push notifications
 
-## React Compiler
+## ✨ Key Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* **Multi-Channel Interaction Logging**: Track every type of communication by logging standard voice calls, text messages, and video chats individually.
+* **Visual Interaction Analytics**: View an interactive breakdown of your communication habits through an automatically updated Recharts pie chart.
+* **Seamless Route Navigation**: Switch instantly between your dashboard, friend profiles, and interaction history logs without reloading the page.

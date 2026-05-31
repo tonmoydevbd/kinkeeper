@@ -9,8 +9,8 @@ import { toast } from "react-toastify"
 
 const FriendDetailsBody = ({ friend, formatDate, handleCall, handleText, handleVideo }) => {
 
-  const notify = (type) => toast.success(`${type} to ${friend.name}`, {
-    position: "top-center",
+  const notify = (type) => toast.success(`${type} with ${friend.name}`, {
+    position: "bottom-right",
     autoClose: 5000,
     hideProgressBar: false,
     closeOnClick: false,
@@ -67,15 +67,15 @@ const FriendDetailsBody = ({ friend, formatDate, handleCall, handleText, handleV
             <Link onClick={() => {
               handleCall()
               notify('Call')
-            }} className="flex flex-col justify-center items-center bg-gray-100 py-4 border border-gray-100 rounded-md"><h3 className="text-4xl"><LuPhoneCall /></h3>Call</Link>
+            }} className="flex flex-col justify-center items-center bg-gray-100 py-4 border border-gray-100 hover:bg-gray-300 rounded-md"><h3 className="text-4xl"><LuPhoneCall /></h3>Call</Link>
             <Link onClick={() => {
               handleText()
               notify('Text')
-            }} className="flex flex-col justify-center items-center py-4 bg-gray-100 border border-gray-100 rounded-md"><h3 className="text-4xl"><MdOutlineTextsms /></h3>Text</Link>
+            }} className="flex flex-col justify-center items-center py-4 bg-gray-100 border border-gray-100 hover:bg-gray-300 rounded-md"><h3 className="text-4xl"><MdOutlineTextsms /></h3>Text</Link>
             <Link onClick={() => {
               handleVideo()
               notify('Video')
-            }} className="flex flex-col justify-center items-center py-4 bg-gray-100 border border-gray-100 rounded-md"><h3 className="text-4xl"><IoVideocamOutline /></h3>Video</Link>
+            }} className="flex flex-col justify-center items-center py-4 bg-gray-100 hover:bg-gray-300 border border-gray-100 rounded-md"><h3 className="text-4xl"><IoVideocamOutline /></h3>Video</Link>
           </div>
         </div>
       </div>

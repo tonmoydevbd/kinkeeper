@@ -33,13 +33,13 @@ const FriendDetails = () => {
   const friend = friendsData.find(item => item.id === parseInt(friendId))
 
   const handleCall = () => {
-    setTimelineData(prev => [...prev, { id: crypto.randomUUID(), name: friend.name, type: 'call', date: new Date() }])
+    setTimelineData(prev => [...prev, { id: crypto.randomUUID(), name: friend.name, type: 'call', date: new Date(), title: `Call with ${friend.name}` }])
   }
   const handleText = () => {
-    setTimelineData(prev => [...prev, { id: crypto.randomUUID(), name: friend.name, type: 'text', date: new Date() }])
+    setTimelineData(prev => [...prev, { id: crypto.randomUUID(), name: friend.name, type: 'text', date: new Date(), title: `Text with ${friend.name}` }])
   }
   const handleVideo = () => {
-    setTimelineData(prev => [...prev, { id: crypto.randomUUID(), name: friend.name, type: 'video', date: new Date() }])
+    setTimelineData(prev => [...prev, { id: crypto.randomUUID(), name: friend.name, type: 'video', date: new Date(), title: `Video with ${friend.name}` }])
   }
 
   return (

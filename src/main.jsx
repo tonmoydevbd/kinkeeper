@@ -7,6 +7,7 @@ import Stats from './pages/Stats/Stats'
 import './index.css'
 import FriendDetails from './pages/FriendDetails/FriendDetails'
 import RootLayout from './components/shared/RootLayout'
+import NotFound from './pages/NotFound/NotFound'
 
 
 
@@ -33,6 +34,10 @@ const router = createBrowserRouter([
         element: <FriendDetails />
       }
     ]
+  },
+  {
+    path: "*",
+    element: <NotFound />
   }
 ])
 

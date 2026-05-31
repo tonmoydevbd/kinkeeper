@@ -18,7 +18,7 @@ const Header = () => {
     <div className="bg-base-100 shadow-sm">
       <div className="navbar max-w-360 mx-auto">
         <div className="navbar-start">
-          <a className="text-xl font-bold ">Keen<span className="text-[#244D3F]">Keeper</span></a>
+          <a href="/" className="text-xl font-bold ">Keen<span className="text-[#244D3F]">Keeper</span></a>
         </div>
         <div className="navbar-end">
           <div className=" hidden sm:flex">
