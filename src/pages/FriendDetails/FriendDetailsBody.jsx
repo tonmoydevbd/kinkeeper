@@ -4,9 +4,22 @@ import { RiDeleteBinLine } from "react-icons/ri"
 import { MdOutlineTextsms } from "react-icons/md"
 import { IoVideocamOutline } from "react-icons/io5"
 import { Link } from "react-router"
+import { toast } from "react-toastify"
 
 
 const FriendDetailsBody = ({ friend, formatDate, handleCall, handleText, handleVideo }) => {
+
+  const notify = (type) => toast.success(`${type} to ${friend.name}`, {
+    position: "top-center",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: false,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+  });
+
   return (
     <div className="max-w-277.5 mx-auto grid grid-cols-1 md:grid-cols-3 py-5 md:py-20 gap-6">
       <div className="col-span-1">
@@ -51,9 +64,18 @@ const FriendDetailsBody = ({ friend, formatDate, handleCall, handleText, handleV
         <div className="bg-white shadow-md border border-gray-100 py-8 gap-4 p-8">
           <h3 className="text-xl font-medium text-[#244d3f]">Quick Check-In</h3>
           <div className="grid grid-cols-3 gap-4 pt-4">
-            <Link onClick={handleCall} className="flex flex-col justify-center items-center bg-gray-100 py-4 border border-gray-100 rounded-md"><h3 className="text-4xl"><LuPhoneCall /></h3>Call</Link>
-            <Link onClick={handleText} className="flex flex-col justify-center items-center py-4 bg-gray-100 border border-gray-100 rounded-md"><h3 className="text-4xl"><MdOutlineTextsms /></h3>Text</Link>
-            <Link onClick={handleVideo} className="flex flex-col justify-center items-center py-4 bg-gray-100 border border-gray-100 rounded-md"><h3 className="text-4xl"><IoVideocamOutline /></h3>Video</Link>
+            <Link onClick={() => {
+              handleCall()
+              notify('Call')
+            }} className="flex flex-col justify-center items-center bg-gray-100 py-4 border border-gray-100 rounded-md"><h3 className="text-4xl"><LuPhoneCall /></h3>Call</Link>
+            <Link onClick={() => {
+              handleText()
+              notify('Text')
+            }} className="flex flex-col justify-center items-center py-4 bg-gray-100 border border-gray-100 rounded-md"><h3 className="text-4xl"><MdOutlineTextsms /></h3>Text</Link>
+            <Link onClick={() => {
+              handleVideo()
+              notify('Video')
+            }} className="flex flex-col justify-center items-center py-4 bg-gray-100 border border-gray-100 rounded-md"><h3 className="text-4xl"><IoVideocamOutline /></h3>Video</Link>
           </div>
         </div>
       </div>
