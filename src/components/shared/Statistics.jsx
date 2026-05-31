@@ -1,9 +1,18 @@
+import { useContext } from "react"
+import { FriendsContext } from "../../../FriendsContext"
+
 const Statistics = () => {
 
+  const friendsData = useContext(FriendsContext)
+  const totalFriends = friendsData.length
+  const onTrack = friendsData.filter(item => item.status === 'on-track').length
+  const needAttention = totalFriends - onTrack
+  // const interactionsThisMonth
+
   const data = [
-    { id: 0, stats: 10, title: 'total friend' },
-    { id: 1, stats: 3, title: 'on track' },
-    { id: 2, stats: 6, title: 'need attertion' },
+    { id: 0, stats: totalFriends, title: 'total friends' },
+    { id: 1, stats: onTrack, title: 'on track' },
+    { id: 2, stats: needAttention, title: 'need attention' },
     { id: 3, stats: 12, title: 'interactions this month' },
   ]
 
