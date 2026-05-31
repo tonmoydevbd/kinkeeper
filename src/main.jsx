@@ -6,25 +6,33 @@ import Timeline from './pages/Timeline/Timeline'
 import Stats from './pages/Stats/Stats'
 import './index.css'
 import FriendDetails from './pages/FriendDetails/FriendDetails'
+import RootLayout from './components/shared/RootLayout'
+
 
 
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <Home />
-  },
-  {
-    path: 'timeline',
-    element: <Timeline />
-  },
-  {
-    path: 'stats',
-    element: <Stats />
-  },
-  {
-    path: 'friend-details/:friendId',
-    element: <FriendDetails />
+    element: <RootLayout />,
+    children: [
+      {
+        index: true,
+        element: <Home />
+      },
+      {
+        path: 'timeline',
+        element: <Timeline />
+      },
+      {
+        path: 'stats',
+        element: <Stats />
+      },
+      {
+        path: 'friend-details/:friendId',
+        element: <FriendDetails />
+      }
+    ]
   }
 ])
 

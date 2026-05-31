@@ -1,7 +1,5 @@
 import { use } from "react"
 import { FriendsContext } from "../../../FriendsContext"
-import Footer from "../../components/shared/Footer"
-import Header from "../../components/shared/Header"
 import Statistics from "../../components/shared/Statistics"
 import FriendsList from "./FriendsList"
 import TitleWithBtn from "./TitleWithBtn"
@@ -15,7 +13,6 @@ const Home = () => {
 
   return (
     <>
-      <Header />
       <FriendsContext value={friendsData}>
         <div className="py-20">
           <TitleWithBtn />
@@ -23,7 +20,6 @@ const Home = () => {
           <FriendsList />
         </div>
       </FriendsContext>
-      <Footer />
     </>
   )
 }
