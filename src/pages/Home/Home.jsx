@@ -6,7 +6,7 @@ import Statistics from "../../components/shared/Statistics"
 import FriendsList from "./FriendsList"
 import TitleWithBtn from "./TitleWithBtn"
 
-const friendsDataPromise = fetch('./friends.json').then(res => res.json())
+const friendsDataPromise = fetch('/friends.json').then(res => res.json())
 
 
 const Home = () => {
